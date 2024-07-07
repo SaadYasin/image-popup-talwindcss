@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="/dist/output.css">
+</head>
+<body class="bg-gray-200 flex justify-center items-center h-screen select-none">
+  <button onclick="showDialog()" class="bg-white py-3 px-5 rounded text-gray-600 shadow-md">
+    Open Modal
+  </button>
+
+  <div id="dialog" class="fixed left-0 top-0 bg-black bg-opacity-30 w-screen h-screen justify-center items-center z-10 opacity-0 hidden transition-opacity duration-500">
+    <div
+      class="content bg-gray-200 h-content w-[95%] box-border top-[50%] left-[50%] scale-0 absolute z-20 active:transition-all active:ease-in-out active:duration-300 -translate-x-1/2 active:scale-x-100 -translate-y-1/2 active:scale-y-100">
+      <div
+        class="close-btn absolute right-[20px] top-[20px] w-[40px] h-[40px] bg-gray-800 text-[30px] text-white text-center leading-[30px]  rounded-full cursor-pointer"
+        onclick="hideDialog()">&times;</div>
+      <h1 class="text-[45px] font-semibold text-center mb-8">Title</h1>
+      <div class="images flex flex-wrap items-center justify-center gap-4 p-12">
+        <img src="/assets/pexels-1.jpg" alt="" class="w-[450px] border-8 border-white" />
+    
+        <img src="/assets/pexels-2-2.jpg" alt="" class="w-[450px] border-8 border-white" />
+    
+        <img src="/assets/pexels-4.jpg" alt="" class="w-[450px] border-8 border-white" />
+    
+        <img src="/assets/pexels-5.jpg" alt="" class="w-[450px] border-8 border-white" />
+    
+        <img src="/assets/pexels-6.jpg" alt="" class="w-[450px] border-8 border-white" />
+    
+        <img src="/assets/pexels-2.jpg" alt="" class="w-[450px] border-8 border-white" />
+      </div>
+    </div>
+  </div>
+  
+  <script src="/main.js"></script>
+</body>
+</html>
